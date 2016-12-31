@@ -1,5 +1,5 @@
 /*
-http://tibyte.kr/253
+http://tibyte.kr/279
 */
 
 
@@ -29,10 +29,6 @@ function init()
        pixels[i*width + j] = (i^j)%256;
      }
    }
-
-
-   //points[numPoints].c = "rgb("+rr+","+rg+","+rb+")";
-
 
    draw(ctx);
 

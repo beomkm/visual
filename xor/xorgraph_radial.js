@@ -1,5 +1,5 @@
 /*
-http://tibyte.kr/253
+http://tibyte.kr/279
 */
 
 
@@ -26,19 +26,12 @@ function init()
 
     for(var i=0; i<height; i++) {
         for(var j=0; j<width; j++) {
-            //pixels[i*width + j] = (i^j)%256;
             var dist = getDist(j-width/2, i-height/2);
-            //pixels[i*width + j] = (256-dist)^j^i;
             var dir = getDir(j-width/2, i-height/2);
             if(dir>255) console.log(dir);
             pixels[i*width + j] = (256-dist)/(dir/96);
         }
     }
-
-
-
-    //points[numPoints].c = "rgb("+rr+","+rg+","+rb+")";
-
 
     draw(ctx);
 
